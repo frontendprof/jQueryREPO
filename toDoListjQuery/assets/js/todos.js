@@ -1,20 +1,15 @@
 
 
 $('li').click(function(){
+    $(this).toggleClass("completed");
+
+});
 
 
-    if($(this).css('color') === "rgb(0, 0, 0)"){
-        $(this).css({
-            color:"white",
-            textDecoration:"none"
-        });
-    }else{
-        $(this).css({
-            color:"black",
-            textDecoration:"line-through"
-        });
-    }
-    
+$("span").click(function(e){
+    $(this).parent().fadeOut(1500,function(){
+        $(this.remove());
+    });
 
-
+    e.stopPropagation();
 });

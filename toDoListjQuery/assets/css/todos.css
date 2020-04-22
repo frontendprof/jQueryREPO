@@ -9,3 +9,9 @@ body{
     width: 500px;
     margin:0 auto;
 }
+
+
+.completed{
+    color:black;
+    text-decoration: line-through;
+}
